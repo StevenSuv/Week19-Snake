@@ -21,6 +21,7 @@ namespace SnakeOOP
 
         public Point GenerateFood()
         {
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
             int x = rnd.Next(2, mapWidth - 2);
             int y = rnd.Next(2, mapHeight - 2);
             return new Point(x, y, symb);
